@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoverCrop</title>
     <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -34,8 +39,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fases</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fases
+                        </a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" data-bs-theme="dark">
+                            <li><a class="dropdown-item" href="#">Fase 1</a></li>
+                            <li><a class="dropdown-item" href="#">Fase 2</a></li>
+                            <li><a class="dropdown-item" href="#">Fase 3</a></li>
+                            <li><a class="dropdown-item" href="fase-4.html">Fase 4</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
@@ -45,34 +59,44 @@
         </div>
     </nav>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center py-5">
-                        <div>
-                            <img class="logo" src="img/Logo.svg" alt="">
-                        </div>
-                        <h1 class="title-2"><span class="text-success">Rover</span>Crop</h1>
-                        <p class="title-desc pt-3">
-                            El proyecto "RoverCrop" se enfoca en mejorar la producción agrícola mediante un
-                            simulador
-                            que analiza el comportamiento de robots agricultores en diferentes tipos de terrenos.
-                        </p>
-                    </div>
+    <!-- Hero -->
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(33, 36, 40, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(33, 36, 40, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,96L16,84C32,72,64,48,96,38C128,28,160,32,192,44C224,56,256,76,288,88C320,100,352,104,384,90C416,76,448,44,480,42C512,40,544,68,576,66C608,64,640,32,672,22C704,12,736,24,768,32C800,40,832,44,864,44C896,44,928,40,960,34C992,28,1024,20,1056,14C1088,8,1120,4,1152,18C1184,32,1216,64,1248,78C1280,92,1312,88,1344,82C1376,76,1408,68,1440,64C1472,60,1504,60,1536,54C1568,48,1600,36,1632,34C1664,32,1696,40,1728,52C1760,64,1792,80,1824,88C1856,96,1888,96,1920,98C1952,100,1984,104,2016,98C2048,92,2080,76,2112,72C2144,68,2176,76,2208,84C2240,92,2272,100,2288,104L2304,108L2304,120L2288,120C2272,120,2240,120,2208,120C2176,120,2144,120,2112,120C2080,120,2048,120,2016,120C1984,120,1952,120,1920,120C1888,120,1856,120,1824,120C1792,120,1760,120,1728,120C1696,120,1664,120,1632,120C1600,120,1568,120,1536,120C1504,120,1472,120,1440,120C1408,120,1376,120,1344,120C1312,120,1280,120,1248,120C1216,120,1184,120,1152,120C1120,120,1088,120,1056,120C1024,120,992,120,960,120C928,120,896,120,864,120C832,120,800,120,768,120C736,120,704,120,672,120C640,120,608,120,576,120C544,120,512,120,480,120C448,120,416,120,384,120C352,120,320,120,288,120C256,120,224,120,192,120C160,120,128,120,96,120C64,120,32,120,16,120L0,120Z">
+        </path>
+    </svg>
+    <section class="section-padding my-5 py-5">
+        <div class="container my-5 py-5">
+            <div class="row gx-5 my-5 py-5">
+                <div class="col-md-12 col-md-6 col-lg-6">
+                    <p id="desc-hero" class="text-justify">"El proyecto "RoverCrop" se enfoca en mejorar la producción
+                        agrícola mediante un simulador que
+                        analiza el comportamiento de robots agricultores en diferentes tipos de terrenos."</p>
+                    <hr id="line">
+                </div>
+                <div class="col-sd-12 col-md-6 col-lg-6 text-center">
+                    <h1 class="title-2">RoverCrop</h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding bg-dark text-white">
+    <!-- Integrantes -->
+    <section id="integrantes" class="section-padding bg-dark text-white">
         <div class="container">
             <div class="text-center">
                 <h1 class="display-6 py-5"><span class="display-4 text-success">I</span>ntegrantes</h1>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card bg-dark text-center text-white" style="width: 18rem;">
+                    <div id="card" class="card bg-dark text-center text-white" style="width: 18rem;">
                         <img src="img/Deiver.jpg" class="card-img-top" alt="Deiver">
                         <div class="card-body">
                             <h5 class="card-title"><span class="display-6 text-success">D</span>eiver Torres</h5>
@@ -83,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card bg-dark text-center text-white" style="width: 18rem;">
+                    <div id="card" class="card bg-dark text-center text-white" style="width: 18rem;">
                         <img src="img/Catalina.jpg" class="card-img-top" alt="Catalina">
                         <div class="card-body">
                             <h5 class="card-title"><span class="display-6 text-success">C</span>atalina Rico</h5>
@@ -95,19 +119,19 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card bg-dark text-center text-white" style="width: 18rem;">
+                    <div id="card" class="card bg-dark text-center text-white" style="width: 18rem;">
                         <img src="img/Jhonatan.jpg" class="card-img-top" alt="Jhonatan">
                         <div class="card-body">
                             <h5 class="card-title"><span class="display-6 text-success">J</span>honatan Orozco</h5>
                             <p class="card-text">Hello, my name is Jhonatan Orozco and I am 19 years old, I am a
                                 university student in software development at the University of San Buenaventura. The
-                                role that I am playing is Designer, I will be in charge of making the different designs
-                                of the program to be made.</p>
+                                role that I am playing is Designer, I will be in charge of making the different designs.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card bg-dark text-center text-white" style="width: 18rem;">
+                    <div id="card" class="card bg-dark text-center text-white" style="width: 18rem;">
                         <img src="img/Lizeth.jpg" class="card-img-top" alt="Lizeth">
                         <div class="card-body">
                             <h5 class="card-title"><span class="display-6 text-success">L</span>izeth Barreto</h5>
@@ -120,40 +144,120 @@
             </div>
         </div>
     </section>
-    <section>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(33, 36, 40, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(33, 36, 40, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,24L16,28C32,32,64,40,96,54C128,68,160,88,192,80C224,72,256,36,288,24C320,12,352,24,384,24C416,24,448,12,480,12C512,12,544,24,576,40C608,56,640,76,672,86C704,96,736,96,768,82C800,68,832,40,864,32C896,24,928,36,960,50C992,64,1024,80,1056,76C1088,72,1120,48,1152,36C1184,24,1216,24,1248,38C1280,52,1312,80,1344,80C1376,80,1408,52,1440,44C1472,36,1504,48,1536,46C1568,44,1600,28,1632,30C1664,32,1696,52,1728,54C1760,56,1792,40,1824,32C1856,24,1888,24,1920,36C1952,48,1984,72,2016,72C2048,72,2080,48,2112,38C2144,28,2176,32,2208,30C2240,28,2272,20,2288,16L2304,12L2304,120L2288,120C2272,120,2240,120,2208,120C2176,120,2144,120,2112,120C2080,120,2048,120,2016,120C1984,120,1952,120,1920,120C1888,120,1856,120,1824,120C1792,120,1760,120,1728,120C1696,120,1664,120,1632,120C1600,120,1568,120,1536,120C1504,120,1472,120,1440,120C1408,120,1376,120,1344,120C1312,120,1280,120,1248,120C1216,120,1184,120,1152,120C1120,120,1088,120,1056,120C1024,120,992,120,960,120C928,120,896,120,864,120C832,120,800,120,768,120C736,120,704,120,672,120C640,120,608,120,576,120C544,120,512,120,480,120C448,120,416,120,384,120C352,120,320,120,288,120C256,120,224,120,192,120C160,120,128,120,96,120C64,120,32,120,16,120L0,120Z">
+        </path>
+    </svg>
+
+
+    <!-- Objetivos -->
+    <section id="objetivos-proyect">
         <div class="container my-5">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <h1 class="display-6"><span class="display-4 text-success">O</span>bjetivo General</h1>
-                    <p>
-                        Diseñar un programa que simule el comportamiento de un Rover agricultor en áreas de cultivo a través de herramientas de software.
-                    </p>
-                </div>
+            <div class="row align-items-center justify-content-center pt-5">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
                     <img class="img-obj" src="img/objetivogeneral.png" alt="objgen">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h1 class="display-6"><span class="display-4 text-success">O</span>bjetivo General</h1>
+                    <p id="objetivos">
+                        Diseñar un programa que simule el comportamiento de un Rover agricultor en áreas de cultivo a
+                        través de herramientas de software.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="container my-5">
-            <div class="row align-items-center justify-content-center pt-4">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
-                    <img class="img-obj" src="img/meta.png" alt="objgen">
-                </div>
+            <div class="row align-items-center justify-content-center pt-5">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h1 class="display-6"><span class="display-4 text-success">O</span>bjetivo Especificos</h1>
-                    <ul>
-                        <li><p>Identificar proyectos previos para la construcción del estado del arte por medio de una búsqueda documental.</p></li>
-                        <li><p>Investigar mediante distintas bases de datos la documentación requerida para el proyecto.</p></li>
-                        <li><p>Realizar una matriz con base a la información adquirida.</p></li>
-                        <li><p>Hacer un análisis de la matriz y establecer los artículos que harán parte del proyecto.</p></li>
+                    <ul id="objetivos">
+                        <li>
+                            <p>Identificar proyectos previos para la construcción del estado del arte por medio de una
+                                búsqueda documental.</p>
+                        </li>
+                        <li>
+                            <p>Investigar mediante distintas bases de datos la documentación requerida para el proyecto.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Realizar una matriz con base a la información adquirida.</p>
+                        </li>
+                        <li>
+                            <p>Hacer un análisis de la matriz y establecer los artículos que harán parte del proyecto.
+                            </p>
+                        </li>
                     </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+                    <img class="img-obj" src="img/meta.png" alt="objgen">
                 </div>
             </div>
         </div>
     </section>
-    
 
 
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3 text-center">
+                <a href="index.html"
+                    class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="img/Logo.svg" alt="Logo" width="100">
+                </a>
+                <p class="text-body-secondary">© RoverCrop | 2023</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Secciones</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#integrantes" class="nav-link p-0 text-body-secondary">Quienes
+                            Somos?</a></li>
+                    <li class="nav-item mb-2"><a href="#objetivos-proyect"
+                            class="nav-link p-0 text-body-secondary">Objetivos</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Fases</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fase 1</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fase 2</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fase 3</a></li>
+                    <li class="nav-item mb-2"><a href="fase-4.html" class="nav-link p-0 text-body-secondary">Fase 4</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Redes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://github.com/DeivTor/RoverCrop"
+                            class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxl-github'></i>
+                            GitHub</a></li>
+                    <li class="nav-item mb-2"><a href="rovercrop.business@outlook.com"
+                            class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxs-envelope'></i></i>
+                            Correo</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
