@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoverCrop</title>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.webp" alt="RoverCrop">
+                <span class="title">
+                    <span class="text-success">Rover</span>Crop
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fases
+                        </a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" data-bs-theme="dark">
+                            <li><a class="dropdown-item" href="fase-1.html">Fase 1</a></li>
+                            <li><a class="dropdown-item" href="fase-2.html">Fase 2</a></li>
+                            <li><a class="dropdown-item" href="fase-3.html">Fase 3</a></li>
+                            <li><a class="dropdown-item" href="fase-4.html">Fase 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Olas -->
+    <section class="wave-container">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(33, 36, 40, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(33, 36, 40, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,46L34.3,53.7C68.6,61,137,77,206,84.3C274.3,92,343,92,411,84.3C480,77,549,61,617,49.8C685.7,38,754,31,823,42.2C891.4,54,960,84,1029,95.8C1097.1,107,1166,100,1234,111.2C1302.9,123,1371,153,1440,149.5C1508.6,146,1577,107,1646,76.7C1714.3,46,1783,23,1851,15.3C1920,8,1989,15,2057,19.2C2125.7,23,2194,23,2263,53.7C2331.4,84,2400,146,2469,168.7C2537.1,192,2606,176,2674,172.5C2742.9,169,2811,176,2880,149.5C2948.6,123,3017,61,3086,53.7C3154.3,46,3223,92,3291,122.7C3360,153,3429,169,3497,180.2C3565.7,192,3634,199,3703,184C3771.4,169,3840,130,3909,115C3977.1,100,4046,107,4114,103.5C4182.9,100,4251,84,4320,88.2C4388.6,92,4457,115,4526,115C4594.3,115,4663,92,4731,92C4800,92,4869,115,4903,126.5L4937.1,138L4937.1,230L4902.9,230C4868.6,230,4800,230,4731,230C4662.9,230,4594,230,4526,230C4457.1,230,4389,230,4320,230C4251.4,230,4183,230,4114,230C4045.7,230,3977,230,3909,230C3840,230,3771,230,3703,230C3634.3,230,3566,230,3497,230C3428.6,230,3360,230,3291,230C3222.9,230,3154,230,3086,230C3017.1,230,2949,230,2880,230C2811.4,230,2743,230,2674,230C2605.7,230,2537,230,2469,230C2400,230,2331,230,2263,230C2194.3,230,2126,230,2057,230C1988.6,230,1920,230,1851,230C1782.9,230,1714,230,1646,230C1577.1,230,1509,230,1440,230C1371.4,230,1303,230,1234,230C1165.7,230,1097,230,1029,230C960,230,891,230,823,230C754.3,230,686,230,617,230C548.6,230,480,230,411,230C342.9,230,274,230,206,230C137.1,230,69,230,34,230L0,230Z">
+            </path>
+        </svg>
+        <div class="container text-center">
+            <div class="row">
+                <div class="wave-title">
+                    <h1 class="display-4"><span class="text-success">F</span>ase 1</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3 text-center">
+                <a href="index.html"
+                    class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="img/Logo.svg" alt="Logo" width="100">
+                </a>
+                <p class="text-body-secondary">© RoverCrop | 2023</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Secciones</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#integrantes" class="nav-link p-0 text-body-secondary">Quienes
+                            Somos?</a></li>
+                    <li class="nav-item mb-2"><a href="#objetivos-proyect"
+                            class="nav-link p-0 text-body-secondary">Objetivos</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Fases</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="fase-1.html" class="nav-link p-0 text-body-secondary">Fase 1</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="fase-2.html" class="nav-link p-0 text-body-secondary">Fase 2</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="fase-3.html" class="nav-link p-0 text-body-secondary">Fase 3</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="fase-4.html" class="nav-link p-0 text-body-secondary">Fase 4</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Redes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://github.com/DeivTor/RoverCrop"
+                            class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxl-github'></i>
+                            GitHub</a></li>
+                    <li class="nav-item mb-2"><a href="rovercrop.business@outlook.com"
+                            class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxs-envelope'></i></i>
+                            Correo</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
