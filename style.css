@@ -68,7 +68,6 @@ body{
     position: relative;
 }
 
-/* Estilos personalizados para el título dentro de la ola */
 .wave-title {
     position: absolute;
     top: 50%;
@@ -79,7 +78,7 @@ body{
 }
 
 .text-gray {
-    color: #dfdfdf; /* Código de color gris en hexadecimal */
+    color: #dfdfdf;
 }
 
 #corousel-interfaz{
