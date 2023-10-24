@@ -84,7 +84,7 @@
     <section class="my-5">
         <div class="container">
             <div class="row py-5">
-                <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center pb-4">
                     <img class="img-obj" src="img/calendario.png" alt="calendario">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
@@ -161,7 +161,8 @@
                 </div>
             </div>
             <div class="row d-flex align-items-center justify-content-center pt-5">
-                <a class="btn btn-outline-success btn-sm" href="https://flet.dev/" role="button">Flet</a>
+                <a class="btn btn-outline-success btn-sm" target="_blank" href="https://flet.dev/"
+                    role="button">Flet</a>
             </div>
         </div>
     </section>
@@ -197,6 +198,101 @@
                         cifrados de manera robusta y protegidos contra accesos no autorizados, manteniendo la
                         confidencialidad y la integridad de la información almacenada en nuestra base de datos.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sesiones & Roles -->
+    <section>
+        <div class="container my-5">
+            <div class="row text-center pt-5">
+                <h1 class="display-6"><span class="display-4 text-success">R</span>oles y Sesiones</h1>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <p id="objetivos">
+                    En nuestro equipo de cuatro integrantes, hemos implementado una estructura de roles en MySQL para
+                    optimizar la gestión de la base de datos. Hemos asignado tres roles clave: Administrador de
+                    Base de Datos (DBA), Administrador (Admin) y Desarrollador (Dev).
+                </p>
+            </div>
+            <div class="row pt-5">
+                <!-- Figura 1 -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <svg id="roles" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="125" cy="125" r="90" fill="#54545c" />
+                            <circle cx="125" cy="125" r="80" fill="#202429" />
+                            <image x="75" y="75" width="100" height="100" xlink:href="img/dba.png" alt="admin" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <h1 id="subtitulos" class="display-6"><span class="display-6 text-success">D</span>ba</h1>
+                    </div>
+                </div>
+                <!-- Figura 2 -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <svg id="roles" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="125" cy="125" r="90" fill="#54545c" />
+                            <circle cx="125" cy="125" r="80" fill="#202429" />
+                            <image x="70" y="79" width="100" height="100" xlink:href="img/admin.png" alt="admin" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <h1 id="subtitulos" class="display-6"><span class="display-6 text-success">A</span>dmin</h1>
+                    </div>
+                </div>
+                <!-- Figura 3 -->
+                <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <svg id="roles" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="125" cy="125" r="90" fill="#54545c" />
+                            <circle cx="125" cy="125" r="80" fill="#202429" />
+                            <image x="80" y="76" width="100" height="100" xlink:href="img/dev.png" alt="admin" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <h1 id="subtitulos" class="display-6"><span class="display-6 text-success">D</span>ev</h1>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="row my-5">
+                <div class="col-sm-12 col-md-5 col-lg-5 d-flex align-items-center">
+                    <p id="objetivos">
+                        A continuación, se presentan los diversos roles creados a través del sistema de gestión de bases
+                        de datos MySQL, junto con su asignación correspondiente a cada usuario. Cada uno de estos roles
+                        posee permisos específicos, lo que contribuye significativamente a un control más efectivo y a
+                        una gestión organizada de la base de datos.
+                    </p>
+                </div>
+                <!-- Carousel -->
+                <div class="col col-sm-12 col-md-7 col-lg-7 pt-5">
+                    <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img id="img-roles" src="img/rol-lizeth.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img id="img-roles" src="img/rol-jhonatan.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img id="img-roles" src="img/rol-deiver.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,7 +346,7 @@
                                         para la lógica, funciones y conexión a la base de datos.
                                         Para apreciar por completo el programa dele clic al siguiente icono.</p>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pb-5">
                                     <img src="img/crud.png" class="card-img-top"
                                         style="max-width: 160px; max-height: 160px;" alt="...">
                                 </div>
@@ -273,7 +369,7 @@
                                         ​​​​​​Para apreciar por completo la estructura de la BD dele clic al siguiente
                                         icono.</p>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pb-5">
                                     <img src="img/diagrama.png" class="card-img-top"
                                         style="max-width: 160px; max-height: 160px;" alt="...">
                                 </div>
@@ -297,7 +393,7 @@
                                         siguiente icono.
                                     </p>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pb-5">
                                     <img src="img/procedimientos.png" class="card-img-top"
                                         style="max-width: 160px; max-height: 160px;" alt="...">
                                 </div>
@@ -355,8 +451,8 @@
                     <li class="nav-item mb-2"><a href="https://github.com/DeivTor/RoverCrop"
                             class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxl-github'></i>
                             GitHub</a></li>
-                    <li class="nav-item mb-2"><a href="#!"
-                            class="nav-link p-0 text-body-secondary"><i id="icon-foot" class='bx bxs-envelope'></i>
+                    <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-body-secondary"><i id="icon-foot"
+                                class='bx bxs-envelope'></i>
                             rovercrop.business@outlook</a></li>
                 </ul>
             </div>

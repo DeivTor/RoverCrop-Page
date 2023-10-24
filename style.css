@@ -41,12 +41,12 @@ body{
 }
 
 #card:hover{
-    transition: transform 0.3s;
+    transition: 0.3s;
     transform: scale(1.1);
 }
 
-.carta:not(:hover) {
-    transition: transform 0.3s 0.3s; /* Retardo de 0.3 segundos antes de volver al tamaño original */
+#card:not(:hover) {
+    transition: 0.1s 0.1s;
     transform: scale(1);
 }
 
@@ -85,11 +85,27 @@ body{
     background: #202528;
 }
 
-.carousel-item img {
+#img-interfaz {
     max-width: 50%;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
-#img-interfaz{
-    border-radius: 15px;
+#roles:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#roles:not(:hover) {
+    transition: 0.1s 0.1s;
+    transform: scale(1);
+}
+
+#carouselExampleInterval{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#img-roles{
+    border-radius: 20px;
 }
