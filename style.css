@@ -78,7 +78,7 @@ body{
 }
 
 .text-gray {
-    color: #dfdfdf;
+    color: #dfdfdf; /* Código de color gris en hexadecimal */
 }
 
 #corousel-interfaz{
