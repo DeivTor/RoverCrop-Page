@@ -122,3 +122,11 @@ embed {
     border-top: 2px solid #202528;
     border-bottom: 2px solid #202528;
 }
+
+#descripcion{
+    background-color: #202528;
+    color: #dfdfdf;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
