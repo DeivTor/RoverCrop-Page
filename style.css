@@ -81,7 +81,7 @@ body{
     color: #dfdfdf; /* Código de color gris en hexadecimal */
 }
 
-#corousel-interfaz{
+#corousel-interfaz, #section-dark{
     background: #202528;
 }
 
@@ -101,7 +101,7 @@ body{
     transform: scale(1);
 }
 
-#carouselExampleInterval{
+embed{
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
